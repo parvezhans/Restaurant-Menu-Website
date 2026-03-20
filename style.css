@@ -1,0 +1,141 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+.container{
+    /* background-color: lightblue; */
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    height: 80px;
+    
+
+}
+
+#navcontainer{
+    list-style: none;
+    
+    
+}
+
+#bookmarks{
+    font-size: 25px;
+    list-style:none;
+    margin:21px ;
+}
+
+.unorder{
+    display: flex;
+    justify-content: space-around;
+
+}
+.heading{
+    margin:21px ;
+    list-style: none;
+    color: beige;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.anchor{
+    display: flex;
+    gap: 20px;
+    
+}
+
+.footerbox{
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    color: aliceblue;
+    text-align: center;
+    
+}
+
+.footerbox p{
+    font-size: 20px;
+}
+
+.contentbox{ 
+    width:50%;
+    margin: auto;
+    /* border: solid black 1px; */
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 2rem;
+    box-shadow: 2px 2px 20px black;
+
+}
+
+.item{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+
+}
+
+
+
+
+.right img{
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    transition:all 0.8s 0s linear; 
+}
+
+.right:hover{
+    transform:scale(1.1);
+}
+
+.right{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s 0s linear;
+    box-shadow: 2px 2px 20px black;
+    border-radius: 20px;
+}
+
+.overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(48, 46, 46, 0.803);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.3s 0s linear;
+
+}
+.overlay span{
+    color: white;
+}
+
+.right:hover .overlay{
+    opacity: 1;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+     
+}
+
+.left h2{
+    font-size: 2rem;
+}
+
+.left h3{
+    font-size: 1.5rem;
+}
+
